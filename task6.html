@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6 - Count Vowels</title>
+    <style>body { font-family: Arial; padding: 30px; }</style>
+</head>
+<body>
+    <h2>6. Count vowels</h2>
+    <button onclick="countVowels()">Run</button>
+    <p id="output"></p>
+
+    <script>
+    function countVowels() {
+        const str = "JavaScript";
+        const count = (str.match(/[aeiouAEIOU]/g) || []).length;
+        document.getElementById('output').textContent = "Vowel count: " + count;
+    }
+    </script>
+</body>
+</html>
