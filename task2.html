@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - First & Last Character</title>
+    <style>body { font-family: Arial; padding: 30px; }</style>
+</head>
+<body>
+    <h2>2. Extract first and last character</h2>
+    <button onclick="extract()">Run</button>
+    <p id="output"></p>
+
+    <script>
+    function extract() {
+        const str = "JavaScript";
+        const result = str.length <= 1 ? str + str : str[0] + str[str.length-1];
+        document.getElementById('output').textContent = "Result: " + result;
+    }
+    </script>
+</body>
+</html>
