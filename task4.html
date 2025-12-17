@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 - Title Case</title>
+    <style>body { font-family: Arial; padding: 30px; }</style>
+</head>
+<body>
+    <h2>4. Convert to Title Case</h2>
+    <button onclick="toTitleCase()">Run</button>
+    <p id="output"></p>
+
+    <script>
+    function toTitleCase() {
+        const str = "convert this to title case";
+        const result = str.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+        document.getElementById('output').textContent = "Result: " + result;
+    }
+    </script>
+</body>
+</html>
