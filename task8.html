@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8 - Third Element</title>
+    <style>body { font-family: Arial; padding: 30px; }</style>
+</head>
+<body>
+    <h2>8. Display third element</h2>
+    <button onclick="showThird()">Show</button>
+    <p id="output"></p>
+
+    <script>
+    const arr = [10, 20, 30, 40, 50];
+    function showThird() {
+        if (arr.length >= 3) {
+            document.getElementById('output').textContent = "Third element: " + arr[2];
+        } else {
+            document.getElementById('output').textContent = "Not enough elements";
+        }
+    }
+    </script>
+</body>
+</html>
