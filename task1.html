@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 - Reverse words in a sentence</title>
+    <style>body { font-family: Arial; padding: 30px; }</style>
+</head>
+<body>
+    <h2>1. Reverse words in a sentence</h2>
+    <button onclick="reverseWords()">Run</button>
+    <p id="output"></p>
+
+    <script>
+    function reverseWords() {
+        const sentence = "Hello world this is JavaScript";
+        const result = sentence.trim().split(/\s+/).reverse().join(' ');
+        document.getElementById('output').textContent = "Result: " + result;
+    }
+    </script>
+</body>
+</html>
