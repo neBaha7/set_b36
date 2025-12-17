@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7 - Array from Input</title>
+    <style>body { font-family: Arial; padding: 30px; }</style>
+</head>
+<body>
+    <h2>7. Create array from popup input</h2>
+    <button onclick="createArray()">Create Array</button>
+    <p id="output"></p>
+
+    <script>
+    function createArray() {
+        const input = prompt("Enter values separated by commas:");
+        const arr = input ? input.split(',').map(item => item.trim()) : [];
+        document.getElementById('output').textContent = "Array: [" + arr.join(', ') + "]";
+    }
+    </script>
+</body>
+</html>
