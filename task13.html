@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 13 - Detect Type</title>
+    <style>body { font-family: Arial; padding: 30px; }</style>
+</head>
+<body>
+    <h2>13. Detect numeric/string and operate</h2>
+    <button onclick="detect()">Enter Value</button>
+
+    <script>
+    function detect() {
+        const input = prompt("Enter a value:");
+        if (input && /^\d+$/.test(input)) {
+            alert("Numeric - Square: " + Math.pow(Number(input), 2));
+        } else if (input) {
+            alert("String - Uppercase: " + input.toUpperCase());
+        }
+    }
+    </script>
+</body>
+</html>
