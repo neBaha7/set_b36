@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5 - Replace Word</title>
+    <style>body { font-family: Arial; padding: 30px; }</style>
+</head>
+<body>
+    <h2>5. Replace a word</h2>
+    <button onclick="replaceWord()">Run</button>
+    <p id="output"></p>
+
+    <script>
+    function replaceWord() {
+        const str = "apple banana apple cat";
+        const result = str.replace(/apple/g, "orange");
+        document.getElementById('output').textContent = "Result: " + result;
+    }
+    </script>
+</body>
+</html>
