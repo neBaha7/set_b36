@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 10 - Even/Odd</title>
+    <style>body { font-family: Arial; padding: 30px; }</style>
+</head>
+<body>
+    <h2>10. Check even/odd</h2>
+    <button onclick="check()">Check 15</button>
+    <p id="output"></p>
+
+    <script>
+    function check() {
+        const num = 15;
+        const result = num % 2 === 0 ? "Even" : "Odd";
+        document.getElementById('output').textContent = num + " is " + result;
+    }
+    </script>
+</body>
+</html>
