@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 11 - Array Sum</title>
+    <style>body { font-family: Arial; padding: 30px; }</style>
+</head>
+<body>
+    <h2>11. Sum of array values</h2>
+    <button onclick="sum()">Calculate</button>
+    <p id="output"></p>
+
+    <script>
+    const arr = [10, 20, 30, 40, 50];
+    function sum() {
+        const total = arr.reduce((a, b) => a + b, 0);
+        document.getElementById('output').textContent = "Sum: " + total;
+    }
+    </script>
+</body>
+</html>
