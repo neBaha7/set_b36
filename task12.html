@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 12 - 10 Digits Input</title>
+    <style>body { font-family: Arial; padding: 30px; }</style>
+</head>
+<body>
+    <h2>12. Input exactly 10 digits</h2>
+    <button onclick="getInput()">Enter Number</button>
+    <p id="output"></p>
+
+    <script>
+    function getInput() {
+        let input;
+        do {
+            input = prompt("Enter exactly 10 digits:");
+        } while (input !== null && !/^\d{10}$/.test(input));
+        document.getElementById('output').textContent = input ? "Valid: " + input : "Cancelled";
+    }
+    </script>
+</body>
+</html>
